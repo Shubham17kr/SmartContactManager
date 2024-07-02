@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}"/>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1 class="text-2 font-bold bg-red-400">welcome to Smart Contact Manager</h1>
+        <p class="text-2 font-bold" data-th-text="${name}">how are you?</p>
+        <h1>Sex:-> <span th:text="${Sex}"></span></h1>
+        <a class="bg-red-800"  th:href="${googleLink}" >click here to go on google</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus sunt libero illo, itaque molestiae
+            repellat eveniet beatae, commodi laboriosam soluta incidunt maxime nisi. Vero laborum cum nemo ipsum qui.</p>
+    </div>
+    <!-- flowbite content -->
+     
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

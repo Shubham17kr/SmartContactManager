@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+</head>
+<body>
+    <h1>This is a about page. </h1>
+    <hr>
+    <div class="host-tag" th:replace="${isLogin} ? ~{base :: parent(~{::.main_content})} : ~{base :: test(~{::#not_logged_in})}">
+        <section class="main_content">
+            <h1>This is a main content(Dynamic content)</h1>
+            <button>click here to open about section...</button>
+            
+        </section>
+        <section id="not_logged_in">
+            <h1>User is not logged in</h1>
+        </section>
+     
+    </div>
+
+</body>
+</html>

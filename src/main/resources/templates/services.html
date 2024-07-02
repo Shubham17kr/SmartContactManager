@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services page</title>
+</head>
+<body>
+    <h1>This is a services page.</h1>
+    <div class="host-tag" th:replace="~{base :: parent(~{::.second_content})}">
+    
+        <section class="main_content">
+            <h1>This is a main content</h1>
+        </section>
+        <section class="second_content">
+            <h1>This is a second content</h1>
+            <button>click here to open section...</button>
+        </section>
+        
+    </div>
+
+
+</body>
+</html>
